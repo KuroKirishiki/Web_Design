@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StoryCrew — проекты, кастинг и рабочее пространство для съёмочной команды.">
+    <title>StoryCrew — от идеи к первому кадру</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Шапка и меню -->
+<header class="header">
+    <div class="container header-content">
+        <a class="logo" href="#top"><span class="camera-mark" aria-hidden="true"></span>StoryCrew</a>
+        <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="menu">Меню ☰</button>
+        <nav class="menu" id="menu" aria-label="Главное меню">
+            <a href="#about">О проекте</a>
+            <a href="#features">Возможности</a>
+            <a href="#how">Как начать</a>
+            <a href="#questions">Вопросы</a>
+            <a class="header-link">Открыть StoryCrew ↗</a>
+        </nav>
+    </div>
+</header>
+
+<main id="top">
+    <!-- 1. Первый экран -->
+    <section class="hero">
+        <div class="container hero-row">
+            <div class="hero-text">
+                <p class="label">ПЛАТФОРМА ДЛЯ СЪЁМОЧНЫХ КОМАНД</p>
+                <h1>У каждой истории<br>есть своя <span>команда.</span></h1>
+                <p class="intro">Найдите людей, которые увидят ваш замысел. Соберите команду и пройдите вместе путь от идеи к первому кадру.</p>
+                <div class="buttons">
+                    <a class="button">Начать свой проект ↗</a>
+                    <a class="text-link" href="#how">Как это работает ↓</a>
+                </div>
+                <p class="hero-note">Короткий метр / клип / документальное кино</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/film.jpg" alt="Мастерская с большим окном и светом для съёмки сцены">
+                <div class="image-top"><span>STORYCREW / SCENE 01</span><span>● REC</span></div>
+                <div class="image-bottom"><span>Сегодня — идея.<br><strong>Завтра — первый дубль.</strong></span><span>01 / 06</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. О проекте -->
+    <section class="about section" id="about">
+        <div class="container about-row">
+            <div><p class="label">01 / О ПРОЕКТЕ</p><h2>Меньше поисков.<br>Больше кино.</h2></div>
+            <div class="about-text"><p>Хорошая идея не должна оставаться в заметках только потому, что рядом нет оператора, актёра или продюсера.</p><p>StoryCrew соединяет людей, которые хотят снимать. Здесь можно рассказать о проекте, найти специалистов и организовать работу команды в одном пространстве.</p><a class="text-link">Посмотреть проекты ↗</a></div>
+        </div>
+    </section>
+
+    <!-- 3. Основные возможности -->
+    <section class="section" id="features">
+        <div class="container">
+            <p class="label">02 / ВОЗМОЖНОСТИ</p>
+            <h2>Всё начинается с людей.<br>Всё продолжается в StoryCrew.</h2>
+            <div class="cards">
+                <article class="card"><span class="card-number">01</span><h3>Проекты и команда</h3><p>Опишите историю, укажите сроки и открытые роли. Пригласите специалистов, чьи работы вам близки.</p>Найти проект ↗</article>
+                <article class="card"><span class="card-number">02</span><h3>Кастинг и портфолио</h3><p>Покажите свои работы или найдите героя для фильма. Соберите отклики и самопробы в одном разделе.</p>Открыть кастинг ↗</article>
+                <article class="card"><span class="card-number">03</span><h3>Работа над фильмом</h3><p>Распределите задачи, согласуйте календарь и бюджет. Обсуждайте подготовку в чате проекта.</p>Заглянуть в проект ↗</article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Три шага -->
+    <section class="steps section" id="how">
+        <div class="container">
+            <p class="label">03 / ПЕРВЫЕ ШАГИ</p><h2>От «есть идея»<br>до «камера, мотор».</h2>
+            <div class="cards">
+                <article class="step"><span>01 — ЗНАКОМСТВО</span><h3>Расскажите о себе</h3><p>Укажите профессию, навыки и добавьте портфолио. Дайте будущей команде увидеть ваш подход.</p></article>
+                <article class="step"><span>02 — ВСТРЕЧА</span><h3>Найдите своих</h3><p>Создайте проект или откликнитесь на роль. Обсудите условия и договоритесь о совместной работе.</p></article>
+                <article class="step"><span>03 — ДЕЙСТВИЕ</span><h3>Готовьте первый дубль</h3><p>Соберите задачи, даты и материалы. Теперь у вашей идеи есть не только план, но и команда.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Настоящий экран нашего приложения -->
+    <section class="section preview-section" id="interface">
+        <div class="container">
+            <div class="section-heading"><div><p class="label">04 / РАБОЧЕЕ ПРОСТРАНСТВО</p><h2>Весь проект.<br>В одном кадре.</h2></div><p>Команда, роли, календарь и бюджет — у каждого дела своё место. Нужные разделы всегда рядом.</p></div>
+            <a class="app-preview" aria-label="Открыть макет главной страницы StoryCrew"><img src="img/Screenshot 2026-10-02 121754.png" alt="Главная страница StoryCrew: проект Тихий свет, ближайшие события и карточки проектов"></a>
+            <p class="preview-caption">Главная страница StoryCrew</p>
+        </div>
+    </section>
+
+    <!-- 6. Для кого создан StoryCrew -->
+    <section class="section audience" id="people">
+        <div class="container about-row">
+            <div><p class="label">05 / СВОИ ЛЮДИ</p><h2>Разные профессии.<br>Общий замысел.</h2><p>Для первой студенческой работы и следующего независимого проекта. Важны ваша идея, опыт и желание создавать вместе.</p></div>
+            <div class="people-list"><div><span>01</span><h3>Режиссёры и продюсеры</h3><p>Собрать состав и организовать производство.</p></div><div><span>02</span><h3>Актёры и специалисты</h3><p>Найти роль, команду и интересную задачу.</p></div><div><span>03</span><h3>Авторы первых историй</h3><p>Начать с небольшого проекта и найти единомышленников.</p></div></div>
+        </div>
+    </section>
+
+    <!-- 7. Вопросы: раскрываются без JavaScript -->
+    <section class="section" id="questions">
+        <div class="container about-row">
+            <div><p class="label">06 / ПЕРЕД СТАРТОМ</p><h2>Ещё пара<br>вопросов.</h2></div>
+            <div class="questions">
+                <details><summary>Подойдёт ли StoryCrew начинающим?</summary><p>Да. Можно оформить учебный проект, показать первые работы и найти участников с похожими интересами. В описании сразу укажите свой опыт и условия участия.</p></details>
+                <details><summary>Можно ли искать только специалиста?</summary><p>Да. Откройте каталог специалистов, посмотрите портфолио и перейдите к обсуждению проекта.</p></details>
+                <details><summary>Есть ли мобильная версия?</summary><p>Да. Для телефона подготовлен отдельный интерфейс с основными разделами. <a href="mobile/index.html#home">Открыть мобильную версию ↗</a></p></details>
+                <details><summary>Что открывается по кнопкам на этом сайте?</summary><p>Учебный интерактивный макет StoryCrew. Он показывает экраны и переходы. Реальная регистрация, платежи и обмен сообщениями через сервер пока не подключены.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="start section">
+        <div class="container start-row"><div><p class="label">ВАШ ПЕРВЫЙ КАДР</p><h2>История уже есть.<br>Осталось найти команду.</h2></div><a class="button button-light">Открыть StoryCrew ↗</a></div>
+    </section>
+</main>
+
+<footer class="footer"><div class="container footer-row"><a class="logo" href="#top"><span class="camera-mark" aria-hidden="true"></span>StoryCrew</a><p>От идеи к кадру.</p><a href="#top">Наверх ↑</a></div><div class="container footer-note">Учебный проект · 2026</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

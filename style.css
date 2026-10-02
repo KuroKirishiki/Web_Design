@@ -1,0 +1,545 @@
+/* Общие настройки */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html { 
+	scroll-behavior: smooth; 
+}
+body {
+    background: #F4F1EA;
+    color: #171717;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+a { 
+	color: inherit; 
+}
+img { 
+	display: block; 
+	max-width: 100%;
+}
+.container { 
+	width: 90%; 
+	max-width: 1296px; 
+	margin: 0 auto; 
+}
+.section { 
+	padding: 88px 0; 
+	scroll-margin-top: 90px; 
+}
+.label { 
+	color: #a73535; 
+	font-size: 12px; 
+	font-weight: bold; 
+	letter-spacing: 2px; 
+	margin-bottom: 22px; 
+}
+h1, h2, h3 { 
+	line-height: 1.15; 
+}
+h1 { 
+	font-size: 64px; 
+	letter-spacing: -3px; 
+}
+h2 { 
+	font-size: 42px; 
+	letter-spacing: -1.5px; 
+	margin-bottom: 28px; 
+}
+h3 { 
+	font-size: 23px; 
+	margin-bottom: 16px; 
+}
+p { 
+	margin-bottom: 18px; 
+}
+
+/* Шапка */
+.header { 
+	background: #171717; 
+	color: white; 
+	position: sticky; 
+	top: 0; 
+	z-index: 10; 
+}
+.header-content { 
+	min-height: 80px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between; 
+	gap: 24px; 
+}
+.logo { 
+	display: flex; 
+	align-items: center; 
+	gap: 12px; 
+	font-size: 24px; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+.camera-mark { 
+	width: 26px; 
+	height: 26px; 
+	border: 2px solid #E94B4B; 
+	display: inline-block; 
+	position: relative; 
+	flex-shrink: 0; 
+}
+.camera-mark::before { 
+	content: ""; 
+	position: absolute; 
+	left: 6px; 
+	right: 6px; 
+	top: -3px; 
+	bottom: -3px; 
+	background: #171717; 
+}
+.camera-mark::after { 
+	content: ""; 
+	position: absolute; 
+	top: 6px; 
+	bottom: 6px; 
+	left: -3px; 
+	right: -3px; 
+	background: #171717; 
+}
+.menu { 
+	display: flex; 
+	gap: 28px; 
+	align-items: center; 
+}
+.menu a { 
+	text-decoration: none; 
+	font-size: 14px; 
+}
+.menu a:hover { 
+	color: #f68f8f;
+}
+.header-link { 
+	border: 1px solid #555; 
+	padding: 10px 16px; 
+	border-radius: 6px;
+}
+.menu-button { 
+	display: none; 
+	background: #171717; 
+	color: white; 
+	border: 1px solid #666; 
+	padding: 10px 14px; 
+	border-radius: 6px; 
+	font: inherit; 
+	cursor: pointer; 
+}
+
+/* Первый экран */
+.hero { 
+	padding: 72px 0; 
+}
+.hero-row { 
+	display: flex; 
+	align-items: center; 
+	gap: 56px; 
+}
+.hero-text { 
+	width: 53%; 
+}
+.hero h1 span { 
+	color: #E94B4B; 
+}
+.intro { 
+	font-size: 19px; 
+	color: #62605c; 
+	max-width: 520px; 
+	margin: 28px 0; 
+}
+.buttons { 
+	display: flex;
+	gap: 24px; 
+	align-items: center; 
+	flex-wrap: wrap; 
+}
+.button { 
+	background: #E94B4B; 
+	color: #171717; 
+	text-decoration: none; 
+	padding: 15px 22px; 
+	border-radius: 6px; 
+	display: inline-block; 
+	font-weight: bold; 
+	transition: background 0.2s;
+}
+.button:hover { 
+	background: #f06a6a;
+}
+.button:active { 
+	background: #d33e3e;
+}
+.text-link { 
+	text-decoration: none;
+	border-bottom: 1px solid #8A8A8A;
+	padding-bottom: 4px;
+}
+.hero-note { 
+	font-size: 12px; 
+	color: #706c65;
+	margin-top: 36px;
+}
+.hero-image { 
+	width: 47%; 
+	height: 510px; 
+	position: relative; 
+	background: #171717; 
+	color: white; 
+	padding: 12px;
+}
+.hero-image img { 
+	width: 100%; 
+	height: 100%; 
+	object-fit: cover;
+}
+.image-top, .image-bottom { 
+	position: absolute; 
+	left: 26px; 
+	right: 26px; 
+	display: flex; 
+	justify-content: space-between; 
+	gap: 16px; background: #171717; 
+	padding: 10px 12px;
+}
+.image-top { 
+	top: 26px; 
+	font-size: 10px; 
+	letter-spacing: 1px; 
+}
+.image-top span:last-child { 
+	color: #ff9696;
+}
+.image-bottom { 
+	bottom: 26px; 
+	align-items: end; 
+	font-size: 14px;
+}
+.image-bottom strong { 
+	font-size: 18px;
+}
+
+/* Описание и карточки */
+.about { 
+	background: white;
+	border-top: 1px solid #dedbd5;
+	border-bottom: 1px solid #dedbd5;
+}
+.about-row { 
+	display: flex; gap: 80px;
+}
+.about-row > div { 
+	width: 50%;
+}
+.about-text { 
+	font-size: 19px;
+}
+.cards { 
+	display: flex; 
+	gap: 24px; 
+	margin-top: 40px;
+}
+.card { 
+	background: white;
+	border: 1px solid #dedbd5;
+	border-radius: 10px;
+	padding: 30px; 
+	flex: 1;
+}
+.card-number { 
+	color: #E94B4B;
+	display: block;
+	margin-bottom: 50px;
+	font-size: 14px;
+}
+.card p { 
+	color: #68645e;
+	font-size: 15px;
+}
+.card a { 
+	display: inline-block; 
+	margin-top: 16px; 
+	font-size: 14px; 
+	font-weight: bold; 
+	text-decoration: none;
+}
+.card a:hover { 
+	color: #b33333;
+}
+
+/* Как начать */
+.steps { 
+	background: #171717; 
+	color: #F4F1EA;
+}
+.steps .label { 
+	color: #f68f8f;
+}
+.step { 
+	flex: 1; 
+	border-top: 1px solid #555;
+	padding-top: 24px; 
+}
+.step span { 
+	color: #f68f8f; 
+	font-size: 11px; 
+	letter-spacing: 1px; 
+}
+.step h3 { 
+	margin-top: 30px;
+}
+.step p { 
+	color: #bdb9b1; 
+	max-width: 350px;
+}
+
+/* Обзор интерфейса */
+.section-heading { 
+	display: flex; 
+	gap: 60px; 
+	justify-content: space-between; 
+	align-items: end; 
+}
+.section-heading > p { 
+	max-width: 360px; 
+	color: #68645e; 
+}
+.app-preview { 
+	display: block; 
+	padding: 16px; 
+	background: #dedbd5; 
+	border: 1px solid #d0ccc4; 
+	border-radius: 12px; 
+	margin-top: 24px; 
+}
+.app-preview img { 
+	width: 100%; 
+}
+.preview-caption { 
+	display: flex; 
+	justify-content: space-between; 
+	gap: 16px; 
+	margin-top: 14px; 
+	font-size: 13px; 
+	color: #68645e; 
+}
+.audience { 
+	background: white; 
+}
+.people-list > div { 
+	padding: 22px 0; 
+	border-bottom: 1px solid #dedbd5; 
+}
+.people-list > div:first-child { 
+	padding-top: 0; 
+}
+.people-list span { 
+	color: #E94B4B; 
+	font-size: 12px;
+}
+.people-list h3 { 
+	margin: 6px 0 10px;
+}
+.people-list p { 
+	color: #68645e;
+	margin: 0;
+}
+
+/* Вопросы и финальный блок */
+details { 
+	border-bottom: 1px solid #d0ccc4; 
+	padding: 22px 0;
+}
+details:first-child { 
+	padding-top: 0;
+}
+summary { 
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+}
+details p { 
+	color: #68645e;
+	margin: 18px 0 0;
+}
+.start { 
+	background: #E94B4B;
+}
+.start .label { 
+	color: #171717;
+}
+.start-row { 
+	display: flex; 
+	justify-content: space-between;
+	align-items: center; 
+	gap: 30px;
+}
+.start h2 { 
+	margin-bottom: 0; 
+}
+.button-light { 
+	background: #F4F1EA;
+	flex-shrink: 0; 
+}
+.button-light:hover { 
+	background: white;
+}
+.footer { 
+	background: #171717; 
+	color: #F4F1EA; 
+	padding: 38px 0 24px;
+}
+.footer-row { 
+	display: flex; 
+	justify-content: space-between;
+	align-items: center; 
+	gap: 20px; 
+}
+.footer-row p { 
+	margin: 0; 
+	color: #bdb9b1; 
+}
+.footer-row > a:last-child { 
+	font-size: 14px;
+}
+.footer-note { 
+	font-size: 12px; 
+	color: #8A8A8A; 
+	margin-top: 28px; 
+}
+:focus-visible { 
+	outline: 3px solid #E94B4B; 
+	outline-offset: 5px;
+}
+
+/* Планшеты */
+@media (max-width: 1100px) {
+    h1 { 
+		font-size: 48px; 
+		letter-spacing: -2px;
+	}
+    h2 { 
+		font-size: 36px; 
+	}
+    .menu { 
+		gap: 16px;
+	}
+    .hero-row { 
+		gap: 28px; 
+	}
+    .hero-image { 
+		height: 460px;
+	}
+    .about-row { 
+		gap: 40px;
+	}
+    .card { 
+		padding: 24px;
+	}
+}
+
+/* Телефоны */
+@media (max-width: 850px) {
+    .header-content { 
+		flex-wrap: wrap; 
+		padding: 16px 0;
+		min-height: 72px;
+	}
+    .menu-button { 
+		display: block;
+	}
+    .menu { 
+		width: 100%; 
+		display: none; 
+		flex-direction: column; 
+		align-items: stretch; 
+		padding: 12px 0;
+	}
+    .menu.open { 
+		display: flex;
+	}
+    .menu a { 
+		padding: 10px 0;
+	}
+    .menu .header-link { 
+		padding: 12px;
+	}
+    .hero-row, .about-row, .section-heading { 
+		flex-direction: column; 
+		align-items: stretch;
+	}
+    .hero-text, .hero-image, .about-row > div { 
+		width: 100%;
+	}
+    .hero-image { 
+		height: 450px; 
+	}
+    .hero { 
+		padding: 48px 0;
+	}
+    .section { 
+		padding: 60px 0;
+	}
+    .cards { 
+		flex-direction: column;
+	}
+    .card-number { 
+		margin-bottom: 24px;
+	}
+    .section-heading { 
+		gap: 0;
+	}
+    .section-heading > p, .step p { 
+		max-width: none;
+	}
+    .start-row { 
+		flex-direction: column; 
+		align-items: flex-start;
+	}
+}
+@media (max-width: 480px) {
+    h1 { 
+		font-size: 39px;
+		letter-spacing: -1.5px;
+	}
+    h2 { 
+		font-size: 32px;
+	}
+    .intro, .about-text { 
+		font-size: 17px;
+	}
+    .hero-image { 
+		height: 380px;
+	}
+    .buttons { 
+		gap: 18px;
+	}
+    .image-top { 
+		font-size: 8px;
+	}
+    .image-bottom strong { 
+		font-size: 15px;
+	}
+    .app-preview { 
+		padding: 6px;
+	}
+    .preview-caption, .footer-row { 
+		flex-direction: column;
+		align-items: flex-start; 
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+    html { 
+		scroll-behavior: auto;
+	}
+    .button { 
+		transition: none;
+	}
+}
